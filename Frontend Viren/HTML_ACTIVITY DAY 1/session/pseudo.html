@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover{
+           
+            color: blueviolet;
+            font-size: 20px;
+        }
+        a:link{
+            color:blue;
+        }
+        a:visited{
+            color:green;
+        }
+        a:active{
+            color: brown;
+            font-style: italic;
+        }
+        /* p{
+            display: none;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+
+        } */
+        /* div:hover p{
+            display: block;
+        } */
+
+        p:first-child{
+            font-size: 15px;
+            background-color: orange;
+        }
+
+        ul li:first-child{
+            color: red;
+        }
+
+        ol li:first-child{
+            color: green;
+        }
+
+        ::marker{
+            color: green;
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            color: blue;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+       
+        p::first-line{
+            background-color: orange;
+        }
+        /* div ~ p::before{
+            content: url(https://www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif);
+        }
+
+        p::after{
+            content: url(https://www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif) ;
+        } */
+
+        p::selection{
+            background-color: yellow;
+            color: black;
+        }
+
+        p:nth-of-type(odd){
+            background-color: crimson;
+            font-size: 20px;
+        }
+        p:nth-of-type(even){
+            background-color: rgb(red, green, blue);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>This is first para ???? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda cum repellat eius dolore consequuntur magnam! Repellendus temporibus magnam, ad laboriosam reiciendis velit quia libero saepe. Autem animi nobis ab hic.</p>
+    <p>This is first para ---- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos similique quibusdam eum voluptatem assumenda veritatis vel voluptas eos natus rem quisquam debitis, tempora pariatur sit totam iure quaerat ullam!</p>
+
+    <div>
+        <p>This is first para under div</p>
+        <p>This is my second para under div</p>
+    </div>
+
+    <a href="box.html">Box page</a>
+
+
+    <div>
+        Click on the text
+        <p>This is my paragraph</p>
+    </div>
+
+    <section>
+        <p>This is a section para</p>
+    </section>
+
+    <ol type="1">
+        <li>India</li>
+        <li>malasiya</li>
+        <li>singapore</li>
+        <li>UK</li>
+        <li>Srilanka</li>
+    </ol>
+
+
+    <ul >
+        <li>India</li>
+        <li>malasiya</li>
+        <li>singapore</li>
+        <li>UK</li>
+        <li>Srilanka</li>
+    </ul>
+
+</body>
+</html>

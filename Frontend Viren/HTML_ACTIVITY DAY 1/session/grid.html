@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            /* grid-template-rows: 200px 100px; */
+            background-color: cadetblue;
+            padding: 10px;
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            gap: 10px;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        /* .grid-item{
+            background-color: pink;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 10px;
+            text-align: center;
+        } */
+        .grid-container > div{
+            background-color: pink;
+            border: 1px solid black;
+            padding: 20px;
+           
+            font-size: 10px;
+            text-align: center;
+        }
+        .grid-item-8{
+            grid-area: 1 / 2 / 5 / 6;
+        }
+
+        .grid-item-1{
+            grid-area: 1 / 1 / 3 / 2;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Grid Layout container</h1>
+    <div class="grid-container">
+            <div class="grid-item-1">A</div>
+            <div class="grid-item-2">B</div>
+            <div class="grid-item-3">C</div>
+            <div class="grid-item-4">D</div>
+            <div class="grid-item-5">E</div>
+
+            <div class="grid-item-6">A1</div>
+            <div class="grid-item-7">B1</div>
+            <div class="grid-item-8">C1</div>
+            <div class="grid-item-9">D2</div>
+            <div class="grid-item-10">E2</div>
+
+            <div class="grid-item-11">C</div>
+            <div class="grid-item-12">D</div>
+            <div class="grid-item-13">E</div>
+            <div class="grid-item-13">F</div>
+            <div class="grid-item-13">G</div>
+
+           
+       
+
+    </div>
+</body>
+</html>
+
+
+<!--<style>
+           .grid-container{
+            display: grid;
+            grid-template-columns: 100px 400px 100px;
+            grid-template-rows: 100px 200px;
+            background-color: cadetblue;
+            padding: 10px;
+            column-gap: 20px;
+            row-gap: 20px;
+            align-content: center;
+            justify-content: center;
+            height: 600px
+           }
+ 
+           .grid-item{
+            background-color: rgb(36, 9, 9);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 10px;
+            text-align: center;
+            color: white
+           }
+        </style>
+    </head>
+    <body>
+       <h1> Grid Layout container</h1>
+       <div class="grid-container">
+         <div class="grid-item"> A </div>
+         <div class="grid-item"> B</div>
+         <div class="grid-item"> C </div>
+         <div class="grid-item"> D </div>
+         <div class="grid-item"> E </div>
+       </div>
+       </body>-->

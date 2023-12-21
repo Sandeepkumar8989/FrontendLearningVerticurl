@@ -1,0 +1,11 @@
+// @for $i from 1 through 4{
+//     .p#{$i} {padding-left:$i * 10px ;color:red; font-style:bold}
+// }
+
+@for $i from 1 through 7 {
+    @if $i % 2 == 0 {
+      .l#{$i} { color: blue; }
+    } @else {
+      .l#{$i} { color: red; }
+    }
+  }

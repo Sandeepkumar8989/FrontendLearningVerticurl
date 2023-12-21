@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 3s, height 3s;
+            margin-top: 200px;
+            margin-left: 300px;
+        }
+        /* div:hover{
+            width: 400px;
+            height: 400px;
+        } */
+
+        #div1{
+            transition-timing-function: linear;
+            transition-delay: 3s;
+        }
+        #div2{
+            transition-timing-function: ease;
+            transition-delay: 2s;
+        }
+        #div3{
+            transition-timing-function: ease-in;
+            transition-delay: 4s;
+        }
+        #div4{
+            transition-timing-function: ease-out;
+            transition-delay: 6s;
+        }
+        #div5{
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        #div6{
+            transition: transform 4s, width 3s , height 2s;
+        }
+
+        #div6:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+            transition-delay: 2s;
+        }
+        div:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+    </div>
+</body>
+</html>

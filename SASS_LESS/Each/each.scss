@@ -1,0 +1,6 @@
+@each $color in red,green,yellow, blue, black {
+    .p_#{$color}{
+        background-color: ($color);
+    }
+    
+}

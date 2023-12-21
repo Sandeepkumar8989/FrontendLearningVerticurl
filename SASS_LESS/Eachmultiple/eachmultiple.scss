@@ -1,0 +1,7 @@
+@each $color, $border, $font in (aqua, dotted,30px),(red,solid,20px),(green,double,30px){
+    .#{$color}{
+        background-color: $color;
+        border: $border;
+        font-size: $font;
+    }
+}

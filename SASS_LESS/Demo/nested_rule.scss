@@ -1,0 +1,25 @@
+$color1: rgb(12, 94, 9);
+$color2: rgb(235, 111, 29);
+
+
+.container{
+    h1{
+        font-size: 25px;
+        color: $color1;
+    }
+    p{
+        font-size: 25px;
+        color: $color2;
+    }
+
+    .box{
+        h1{
+            font-size: 25px;
+            color: $color1;
+        }
+        p{
+            font-size: 25px;
+            color: $color2;
+        }
+    }
+}

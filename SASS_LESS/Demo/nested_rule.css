@@ -1,0 +1,16 @@
+.container h1 {
+  font-size: 25px;
+  color: rgb(12, 94, 9);
+}
+.container p {
+  font-size: 25px;
+  color: rgb(235, 111, 29);
+}
+.container .box h1 {
+  font-size: 25px;
+  color: rgb(12, 94, 9);
+}
+.container .box p {
+  font-size: 25px;
+  color: rgb(235, 111, 29);
+}/*# sourceMappingURL=nested_rule.css.map */

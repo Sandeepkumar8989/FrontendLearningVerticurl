@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            background-color: cadetblue;
+
+            padding: 10px;
+            margin-left: 30%;
+            margin-right: 30%;
+            gap: 10px;
+            align-content: center;
+            justify-content: center;   
+        }
+        .grid-container > div{
+            background-color: pink;
+            border: 1px solid black;
+            padding: 20px;  
+            font-size: 10px;
+            text-align: center;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-item-5{
+            width: 300px;
+            height: 300px;
+            grid-area: 2 / 2 / 3 / 3;
+        }
+       .grid-item-1{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .grid-item-2{
+            /* grid-area: 2 / 1 / 2 / 3; */
+            grid-column-start:2 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end:3 ;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Grid Layout container</h1>
+    <div class="color">
+        <div class="grid-container">
+            <div class="grid-item-1">C1</div>
+            <div class="grid-item-2">W1</div>
+            <div class="grid-item-3">C2</div>
+            <div class="grid-item-4">L2</div>
+            <div class="grid-item-5">C</div>
+            <div class="grid-item-6">L1</div>
+            <div class="grid-item-7">C3</div>
+            <div class="grid-item-8">W2</div>
+            <div class="grid-item-9">C4</div>
+            
+    </div>
+    </div>
+    
+</body>
+</html>

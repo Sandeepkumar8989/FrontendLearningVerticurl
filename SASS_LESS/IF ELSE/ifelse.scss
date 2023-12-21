@@ -1,0 +1,16 @@
+$user: platinum;
+
+p{
+    @if $user == gold_u {
+        color: red;
+    }
+    @else if $user == silver_u{
+        color: blue;
+    }
+    @else if $user == platinum {
+        color: green;
+    }
+    @else{
+        color: green;
+    }
+}

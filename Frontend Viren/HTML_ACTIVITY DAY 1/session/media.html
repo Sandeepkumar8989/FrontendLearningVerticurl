@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+        .one{
+            overflow: auto;
+        }
+        #two{
+            float: none;
+            width: auto;
+        }
+        /* #menulist{
+
+        } */
+
+        .menuitem{
+            color: red;
+            background-color: pink;
+            border: 2px solid green;
+            margin: 5px;
+            padding: 3px;
+        }
+        @media only tablet and (min-width: 760px)
+        {
+            body{
+                background-color: green;
+
+            }
+            #main{
+                margin-left: 200px;
+
+            }
+            #two{
+                width: 200px;
+                float: left;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eligendi, tempora quidem quas minus magni exercitationem minima ipsum saepe accusamus?</p>
+    <div class="one">
+        <div id="two">
+            <ul id="menulist">
+                <li class="menuitem">Iteam A</li> 
+                <li class="menuitem">Iteam B</li> 
+                <li class="menuitem">Iteam C</li> 
+                <li class="menuitem">Iteam D</li> 
+                <li class="menuitem">Iteam E</li> 
+                <li class="menuitem">Iteam F</li> 
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolorum.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            background-color: cadetblue;
+            padding: 10px;
+            column-gap: 20px;
+            row-gap: 20px;
+
+        }
+        .grid-container > div{
+            background-color: pink;
+            border: 1px solid black;
+            padding: 20px;
+           
+            font-size: 10px;
+            text-align: center;
+        }
+        .grid-item-1{
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 3;
+        }
+
+        .grid-item-2{
+            grid-column-start: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 4;
+        }
+        .grid-item-3{
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-end: 4;
+        }
+
+        .grid-item-4{
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 4;
+        }
+        .grid-item-5{
+            grid-column-start: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 5;
+        }
+        .grid-item-6{
+            grid-column-start: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 7;
+        }
+
+        .grid-item-7{
+            grid-column-start: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 6;
+        }
+        .grid-item-8{
+            grid-column-start: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout container</h1>
+    <div class="grid-container">
+            <div class="grid-item-1">A</div>
+            <div class="grid-item-2">B</div>
+            <div class="grid-item-3">C</div>
+            <div class="grid-item-4">D</div>
+            <div class="grid-item-5">E</div>
+            <div class="grid-item-6">F</div>
+            <div class="grid-item-7">G</div>
+            <div class="grid-item-8">H</div>
+        </div>
+</body>
+</html>

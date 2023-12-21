@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep</title>
+    <style>
+        
+        div p:first-child,
+        section p:first-child,
+        article p:first-child {
+            background-color: red;
+            color: white;
+        }
+
+        section + p {
+            background-color: blue;
+            color: white;
+        }
+
+        div ~ p,
+        article ~ p {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        div article {
+            color: white;
+            background-color: green;
+        }
+
+        div p{
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is my first para</p>
+        <p>This is my second para</p>
+        <p>This is my third para</p>
+    </div>
+
+    <p>This is a para</p>
+    <section>
+        <p>This is my fourth para</p>
+    </section>
+
+    <p>This ia a image</p>
+   
+    <article>
+        <p>This is my fifth para</p>
+        <p>This is my paragraph</p>
+    </article>
+
+    <div>
+        <div>
+            <article>
+                <p>THis is my sixth para</p>
+                <p>This is my 7th para</p>
+                <p>This is my 8th para</p>
+            </article>
+        </div>
+    </div>
+
+    <div>
+        <p>THis is my 9th para</p>
+        <p>This is my 10th para</p>
+    </div>
+</body>
+</html>

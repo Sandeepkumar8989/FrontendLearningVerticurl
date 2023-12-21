@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --primary-color:#f09e5a;
+            --secondary-color:#f309ad;
+            --accent-color:#db23db;
+            --test-color:#323e04;
+            }
+        h1{
+            background-image: url(https://images.template.net/wp-content/uploads/2015/11/25190714/Free-Download-Plain-Blue-Backgrounds.jpg);
+            color: var(--primary-color);
+            text-align: center;
+        }
+        #p1{
+            color: var(--accent-color);
+            align-items: baseline;
+        }
+        #p2{
+            color: var(--test-color);
+        }
+        #p3{
+            color: var(--primary-color);
+        }
+        .S{
+            color: var(--primary-color);
+        }
+        .l{
+            background-color: var(--primary-color);
+        }
+       
+        #p1:hover{
+            background-color: var(--test-color);
+        }
+
+        #p2:hover{
+            background-color: var(--secondary-color);
+        }
+        #p3:hover{
+            background-color: var(--test-color);
+        }
+
+    .relative1{
+        position: relative;
+        width: 400px;
+        height: 300px;
+        left: 10px;
+   
+    }
+    .absolute{
+        position: absolute;
+        width: 900px;
+        height: 250px;
+        left: 250px;
+        top: 10px;
+        right: 30px;
+    
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Zomato Page</h1>
+    </div>
+    <div class="relative1">
+        <img src="https://w7.pngwing.com/pngs/415/39/png-transparent-roast-chicken-chicken-food-meat.png" alt="Chicken" width="200px" height="200px" >
+        <div class="absolute">
+            <p id="p1" class="pp">Chickens have fleshy combs, lobed wattles, and high-arched tails. The comb is a red appendage on the top of the head, and the wattles are two appendages under the chin. These are secondary sexual characteristics and are more prominent in the male.<span class="S">price 250rs</span> </p>
+        </div>
+        </div>
+
+        <div class="relative1">
+            <img src="https://w7.pngwing.com/pngs/767/129/png-transparent-orange-juice-breakfast-juicer-juice-food-breakfast-citrus-thumbnail.png" alt="juice" width="200px" height="200px" >
+            <div class="absolute">
+                <p id="p2" class="pp">Juice is a drink made from the extraction or pressing of the natural liquid contained in fruit and vegetables.<span class="S">price 50rs</span> </p>
+            </div>
+            </div>
+
+            <div class="relative1">
+                <img src="https://w7.pngwing.com/pngs/1018/614/png-transparent-chicken-sandwich-cheese-sandwich-vegetable-sandwich-submarine-sandwich-hamburger-jamon-food-breakfast-recipe-thumbnail.png" alt="sandwich" width="200px" height="200px" >
+                <div class="absolute">
+                    <p id="p3" class="pp">A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type.<span class="S">price 150rs</span> </p>
+                </div>
+                </div>
+ 
+
+        <p class=" l">
+            location 1: Delhi 
+        </p>
+        <p class="l">
+            location 2: Mumbai 
+        </p>
+
+        <footer>
+           <p>  &copy; 2022. All right reserved</p>
+        </footer>
+  
+
+</body>
+</html>

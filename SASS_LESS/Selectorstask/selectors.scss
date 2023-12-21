@@ -1,0 +1,23 @@
+div {
+    > p::first-letter {
+        color: blue;
+    }
+
+    ~ p:nth-of-type(even)::first-letter {
+        color: orange;
+    }
+
+    p {
+        &::before {
+            content: " welcome ";
+        }
+
+        &::first-line {
+            font-size: 20px;
+        }
+    }
+
+    ~ p::after {
+        content: "Bye";
+    }
+}

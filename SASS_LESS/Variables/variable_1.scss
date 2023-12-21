@@ -1,0 +1,18 @@
+$col-primary: rgb(15, 204, 24);
+$col-primary-400:lighten($col-primary, 10%);
+$col-primary-500:$col-primary;
+
+$col-primary-600:darken($col-primary, 10%);
+
+div > div{
+    padding: 2rem;
+}
+div:nth-child(1){
+    background: $col-primary-600;
+}
+div:nth-child(2){
+    background: $col-primary-500;
+}
+div:nth-child(3){
+    background: $col-primary-400;
+}

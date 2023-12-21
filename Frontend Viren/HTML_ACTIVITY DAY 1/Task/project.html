@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep</title>
+    <link rel="stylesheet" href="assign.css">
+    <style>
+        .top{
+            background-color: black;
+            height: 70px;      
+            padding-bottom: 10px;   
+            margin: 0%; 
+        }
+        .img{
+            margin-top: 5px;
+           margin-left: 5px;
+        }
+        #h{
+           margin-left: 30px;
+           display: inline;
+            color: white;
+            margin-top: 2px;
+        }
+        .search-container {
+            display: inline;
+            margin-left: 350px;
+            }
+        .search-container input[type=text] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 500px;  
+        }
+   /*  */
+        li a{
+            color: black;
+            padding: 15px 16px;
+            text-decoration: none; 
+        }
+        li a:hover{
+            color: rgb(242, 242, 247);
+            background-color: red;
+        }
+        li{
+            float: left;
+        }
+        ul {
+            padding: 10px;
+            margin: 15px;
+            list-style-type: none;
+            background-color: whiteblack;
+            overflow: hidden;  /*it will hidden the overflow*/
+            width: 98%;
+            position: relative;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav1{
+            position: absolute;
+        }
+        #nav{
+            border: 2px solid black;
+            margin: 0px;
+            background-color:cornsilk;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 150px 150px ;
+           
+            border: 1px solid black;
+            
+        }
+        .grid-container > div{
+            background-color: white;
+           
+            padding-bottom: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .grid-container2{
+            display: grid;
+            grid-template-columns: 150px 150px ;
+            border: 1px solid black;
+        }
+        .grid-container2 > div{
+            background-color: white;
+            /* padding: 5px; */
+            padding-bottom: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .grid-container3{
+            display: grid;
+            grid-template-columns: 150px 150px  ;
+            border: 1px solid black;
+        }
+        .grid-container3 > div{
+            background-color: white;
+            
+            /* padding: 5px; */
+            padding-bottom: 5px;
+           
+            font-size: 10px;
+            text-align: center;
+        }
+        .grid-container4{
+            display: grid;
+            grid-template-columns: auto  ;
+            
+            /* border: 1px solid black; */
+            column-gap: 10px;
+            
+        }
+       
+        .grid-container4 > div{
+            background-color: white;
+           
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .grid-item-1{
+            grid-column-start:1 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 3;
+        }
+        .grid-item-2{
+            grid-column-start:1 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-end: 2;
+        }
+        .grid-item-3{
+            grid-column-start:2 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-end: 3;
+        }
+        .grid-item-4{
+            grid-column-start:1 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 2;
+        }
+        .grid-item-5{
+            grid-column-start:2 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 3;
+        }
+        
+       
+        .grid{
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .offer{
+            text-decoration: none;
+            font-size: small;
+            padding: auto;
+            
+        }
+        .offer:hover{
+            color: green;
+        }
+       .figcaption{
+        font-size: 12px;
+       }
+       .button{
+        border-radius: 15px;
+        background-color: yellow;
+        width:250px;
+        height: 40px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+       }
+       .button:hover{
+        box-shadow: 0px 0px 20px yellow;
+        cursor: pointer;
+       }
+
+       .font{
+        font-size: 20px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqIOdlerpRXRxGWggYFvyCXhWPjhnueoNsRe23rHj&s" alt="logo" width="200px" height="50px">
+
+        <h4 id="h"><img src="img/location.png" alt="" width="50px" height="50px"> Update location</h4>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search Amazon.in...">
+          </div>
+    </div>
+<!--next div-->
+    <div class="nav-1">
+        <ul id="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="#cosmetics">Cosmetics</a></li>
+            <li><a href="#homekitchen">HomeKitchen</a></li>
+            <li><a href="#mobiles">Mobiles</a></li>
+            <li><a href="#giftideas">Gift Ideas</a></li>
+            <li><a href="#contact">ContactUs</a></li>
+            <li><a href="#users">Users</a></li>
+        </ul>
+    </div>
+
+    <div class="deal">
+        <img src="img/banner (1).jpg" alt="deal"  width="1330px" height="100%">
+
+    </div>
+
+<div class="grid1">
+    <div class="grid">
+        
+        <div class="grid-container">
+                <div class="grid-item-1" ><h1>Starting ₹199 | shoes & handbags</h1></div>
+                <div class="grid-item-2"><img src="img/shoe1.jfif" alt="shoe"  width="90px" height="90px"><figcaption class="figcaption">Sports Shoes</figcaption></div>
+                <div class="grid-item-3"><img src="img/download.jfif" alt="sport"  width="90px" height="90px"><figcaption class="figcaption">Men's Casual shoes</figcaption></div>
+                <div class="grid-item-4"><img src="img/women.jfif" alt="shoes"  width="90px" height="90px"><figcaption>Womens</figcaption class="figcaption"></div>
+                <div class="grid-item-5"><img src="img/handbag.jfif" alt="handbag"  width="90px" height="90px"><figcaption class="figcaption">Handbag</figcaption></div>
+                <a class="offer" href="https://www.amazon.in/" target="_blank">See all deals</a>
+        </div>
+
+        <div class="grid-container2">
+            <div class="grid-item-1"><h1>Up to 70% | Deals on Amazon Brands & More</h1></div>
+            <div class="grid-item-2"><img src="img/lamp.jfif" alt="products"  width="90px" height="90px"><figcaption class="figcaption">Starting at ₹169 | Home Products  </figcaption></div>
+            <div class="grid-item-3"><img src="img/kitchen.jfif" alt="kitchen"  width="90px" height="90px"><figcaption class="figcaption">Starting at ₹159 | Kitchen Products</figcaption></div>
+            <div class="grid-item-4"><img src="img/dry.jfif" alt="dryfruits"  width="90px" height="90px"><figcaption class="figcaption">Starting at ₹99 | Dry Fruits & more</figcaption></div>
+            <div class="grid-item-5"><img src="img/dress.jfif" alt="dresses"  width="90px" height="90px"><figcaption class="figcaption">Min 60% off | Dresses</figcaption></div>
+            <a class="offer" href="https://www.amazon.in/" target="_blank">See all deals</a>
+    </div>
+
+    <div class="grid-container3">
+        <div class="grid-item-1"><h1>Deals on smart phones that suits your budget</h1></div>
+        <div class="grid-item-2"><img src="img/mo4.jfif" alt="budget"  width="90px" height="90px"><figcaption class="figcaption">Budget | Under ₹10,000  </figcaption></div>
+        <div class="grid-item-3"><img src="img/M34.jfif" alt="midrange"  width="90px" height="90px"><figcaption class="figcaption">Mid Range |₹10,000 - ₹25,500 </figcaption></div>
+        <div class="grid-item-4"><img src="img/oneplus.jfif" alt="mobile"  width="90px" height="90px"><figcaption class="figcaption">Premium |₹25,000 - ₹40,000   </figcaption></div>
+        <div class="grid-item-5"><img src="img/apple.jfif" alt="mobile"  width="90px" height="90px"><figcaption class="figcaption">Ultra Premium |Above ₹40,000   </figcaption></div>
+        <a class="offer" href="https://www.amazon.in/" target="_blank">See all deals</a>
+</div>
+
+    <div class="grid-container4">
+                <div  class="font"><h1>Sign in for your best experience</h1> </div>
+                <button class="button" type="submit">Sign in securely</button>
+        <div class="grid-item-6"><img src="img/last.png" alt="mobile"  width="300px" height="250px"></div>
+        
+    </div>
+</div>
+
+
+       
+</body>
+</html>

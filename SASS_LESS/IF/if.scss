@@ -1,0 +1,5 @@
+p{
+    @if 10 + 10 == 20 {border: 4px dotted red;}
+    @if 7>2 {border: 2px solid blue;}
+    @if null {border: 3px double yellow;}
+}

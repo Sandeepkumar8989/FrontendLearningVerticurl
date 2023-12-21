@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flex{
+            display: flex;
+            flex-flow: column;
+            border: 2px solid black;
+            
+        }
+        .flex-container{
+            display: flex;
+            background-color: gray;
+            align-items: stretch;
+            flex-flow: column;   
+        }
+
+        .flex-container1{
+            display: flex;
+            background-color: gray;
+            align-items: stretch;
+            flex-flow: column;
+              
+        }
+        .flex-container div {
+           background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+        }
+       
+        .flex-container1 div {
+         background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+        }
+        
+        
+        @media screen and (min-width:760px)
+        {
+            .flex{
+            
+            flex-flow: column;
+            box-sizing: border-box;
+        }
+            .flex-container{
+            display: flex;
+            background-color: greenyellow;
+           
+            flex-flow: column;   
+        }
+
+        .flex-container1{
+            display: flex;
+            background-color: greenyellow;
+           
+            flex-flow: column;
+              
+        }
+        .flex-container div {
+           background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+        }
+       
+        .flex-container1 div {
+         background-color: lightblue;
+            /* margin: 200px; */
+            margin-left: 350px;
+            margin-right: 0px;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            
+        }
+        }
+
+        @media screen and (min-width:760px) and (max-width:1024px)
+        {
+            .flex{
+            display: flex;
+            flex-flow: column;
+            box-sizing: border-box;
+        }
+            .flex-container{
+            display: flex;
+            background-color: red;
+            flex-flow: column;   
+        }
+
+        .flex-container1{
+            display: block;
+            background-color: red;
+           
+            flex-flow: column;
+              
+        }
+        .flex-container div {
+           background-color: yellow;
+           margin-left: 250px;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+        }
+       
+        .flex-container1 div {
+         background-color: lightblue;
+            /* margin: 200px; */
+            /* margin-right: 0px; */
+            margin-left: 250px;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            
+        }
+        } 
+        
+    </style>
+</head>
+<body>
+   <div class="flex">
+
+  
+    <div class="flex-container"> 
+        <div></div>
+   </div>
+
+   <div class="flex-container1"> 
+        <div></div>
+    </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+div > p::first-letter {
+  color: blue;
+}
+div ~ p:nth-of-type(even)::first-letter {
+  color: orange;
+}
+div p::before {
+  content: " welcome ";
+}
+div p::first-line {
+  font-size: 20px;
+}
+div ~ p::after {
+  content: "Bye";
+}/*# sourceMappingURL=selectors.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Automation Demo Site</H1>
+
+    <H2>Register</H2>
+<form>
+    <div>
+        First Name<sup>*</sup> &nbsp;<input type="text" name="first" id="first" placeholder=" first name" required> 
+        <input type="text" name="last" id="last" placeholder=" Last name"> 
+        <br><br>
+
+        Address <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="textarea1" id="textarea1" cols="30" rows="10">Enter your Address</textarea><br>
+        <div>
+            <img src="https://demo.automationtesting.in/original.png" alt="not available" width="100px" height="100px"/>
+
+            choose: <input type="file" id="file" name="file"/><br><br>
+        </div>
+
+        Email Address <sup>*</sup> &nbsp;<input type="email" name="email" id="email"><br><br>
+
+        Phone <sup>*</sup> <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+        <div>
+            Gender<sup>*</sup>&nbsp;
+            Male: <input type="radio" name="gender" id="male">
+
+            Female: <input type="radio" name="gender" id="female"><br><br>
+        </div>
+
+        Hobbies &nbsp;
+        <div >
+        <input type="checkbox" name="cricket" id="cricket">cricket <br>
+
+        <input type="checkbox" name="movies" id="movies">movies <br>
+
+        <input type="checkbox" name="hockey" id="hockey"> Hockey<br>
+        </div>
+ <br>
+        <label for="Skills">Skills:</label>&nbsp;&nbsp;
+
+<select name="skills" id="skills" >
+  <option value="java">java</option>
+  <option value="python">python</option>
+  <option value="C">C</option>
+  <option value="C++">C++</option>
+</select>
+
+<br><br>
+    </div>
+    
+
+    <label for="country">Select Country:</label>&nbsp;&nbsp;
+
+<select name="country" id="country" >
+  <option value="india">india</option>
+  <option value="japan">japan</option>
+  <option value="china">China</option>
+  <option value="UK">UK</option>
+</select>
+<br><br>
+
+DOB: <input type="date"/> <br><br>
+
+Password: <input type="password" name="pass" id="pass"><br><br>
+
+Confirm Password: <input type="password" name="pass" id="pass"><br><br>
+
+    
+<button type="submit">submit</button>
+<button type="submit">Refresh</button>
+    
+</form>
+
+</body>
+</html>

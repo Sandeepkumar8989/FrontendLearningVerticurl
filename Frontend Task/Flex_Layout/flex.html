@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+        .flex-container{
+            display: flex;
+            background-color: white;
+            align-items: stretch;
+            flex-flow: column;
+            border: 3px solid black;
+        }
+        .flex-container div{
+            background-color: lawngreen;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            width: 150px;
+            height: 70px;
+            border: 3px solid black;
+        }
+
+        .flex-container1{
+            display: flex;
+            background-color: white;
+            height: 250px;
+            border: 3px solid black;
+        }
+        .flex-container1 > div{
+            background-color: beige;
+            margin: 10px;
+            padding: 20px;
+            color: black;
+            width: 100px;
+            
+            border: 3px solid black;
+        }
+
+        .flex-container2{
+            display: flex;
+            background-color: white;
+            height: 150px;
+            
+           
+        }
+        .flex-container2 > div{
+            background-color: lightskyblue;
+            margin: 10px;
+            padding: 10px;
+            color: black;
+            flex-grow: 1;
+            border: 3px solid black;
+        }
+
+        .flex-container3{
+            display: flex;
+            background-color: white;
+            height: 160px;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-container3 > div{
+            background-color: gray;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            width: 90px;
+            height: 90px;
+            border: 3px solid black;
+        }     
+        .p{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex"> <!-- div start -->
+        <div class="flex-container"> <!-- div1 start -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> <!-- div1 end -->
+
+        <div>
+            <div class="flex-container1">
+                <div></div>
+                <div style="align-self: center;"></div>
+                <div></div>
+                <div style="align-self: flex-start;"></div>   
+                <div style="align-self: flex-end;"></div>                
+            </div>
+
+            <div class="p">
+                <div class="flex-container2">
+                    <div style="flex-grow: 4;"></div>
+                    <div style="flex-grow: 4;"></div>
+                    <div style="flex-grow: 1;"></div>
+                    <div style="flex-grow: 8;"></div>
+                </div>
+                <div class="flex-container3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div> <!-- div end -->
+</body>
+</html>

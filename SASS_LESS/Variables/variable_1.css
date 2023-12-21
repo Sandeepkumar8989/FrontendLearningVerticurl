@@ -1,0 +1,15 @@
+div > div {
+  padding: 2rem;
+}
+
+div:nth-child(1) {
+  background: #0c9c12;
+}
+
+div:nth-child(2) {
+  background: rgb(15, 204, 24);
+}
+
+div:nth-child(3) {
+  background: #1fef29;
+}/*# sourceMappingURL=variable_1.css.map */

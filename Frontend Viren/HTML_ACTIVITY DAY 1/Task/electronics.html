@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <style>
+          li a{
+            color: white;
+            padding: 15px 16px;
+            text-decoration: none; 
+        }
+        li a:hover{
+            color: black;
+            background-color: yellow;
+        }
+        li{
+            float: left;
+        }
+        ul {
+            padding: 10px;
+            margin: 15px;
+            list-style-type: none;
+            background-color: whiteblack;
+            overflow: hidden;  /*it will hidden the overflow*/
+            width: 98%;
+            position: relative;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav1{
+            position: absolute;
+        }
+        #nav{
+            border: 2px solid black;
+            margin: 0px;
+            color: white;
+            background-color:black;
+        }
+
+        .flex-container{
+            display: flex;
+            background-color: white;
+            align-items: stretch;
+            flex-flow: row;
+          
+        }
+        .flex-container div{
+            
+            margin: 10px;
+            padding: 10px;
+            width: 60px;
+            height: 20px;
+            border: 1px solid black;
+        }
+        #box1:hover{
+            box-shadow: 0px 0px 20px orange; 
+            cursor: pointer;
+        }
+        #box2:hover{
+            box-shadow: 0px 0px 20px gray; 
+            cursor: pointer;
+        }
+        #box3:hover{
+            box-shadow: 0px 0px 20px green;
+            cursor: pointer; 
+        }
+        .relative{
+            
+            display: flex;
+            margin: 20px;
+        }
+        .absolute{
+            
+            display: inline-flexbox;
+            margin-left: 20px;
+        }
+        #cart {
+            padding: 12px;
+            background-color: moccasin;
+            width: 200px;
+            
+        }
+        .span{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        #cart:hover{
+            background-color: blue;
+            color: white;
+            box-shadow:0px 0px 15px blue ;
+            cursor: pointer;
+        }
+        .add{
+            width: 20px;
+            height: 35px;
+            margin-left: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-1">
+        <ul id="nav">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="#aboutus">AboutUs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="relative">
+        <img src="img/led.jpg" alt="Tv" width="400px" height="300px">
+
+        <div class="absolute">
+            <h2>OnePlus (43 inches) 4K Ultra HD Smart Android LED TV </h1>
+                <div>
+                    <h3 >Description: </h3>
+                    <p>Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 60 Hertz</p> 
+                   <p>Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | Dual-band Wi-Fi</p> 
+                   <p>Sound : 24 Watts Output | Dolby Audio | Dolby Atmos Decoding</p> 
+                </ul>   
+                </div>
+                
+                <div>
+                    <div class="flex-container"> <!-- div1 start -->
+                       <h4>Colors:</h4>  
+                        <div id="box1" style="background-color:orange;"></div>
+                        <div id="box2" style="background-color:gray;"></div>
+                        <div id="box3" style="background-color:green;"></div>
+                        
+                    </div> <!-- div1 end -->
+                </div>
+
+                <div >
+                   
+                    <button id="cart" type="submit">Add to Cart </button> <span class="span">&#8722;</span><input class="add" type="number" placeholder="1">
+                       <span class="span">&#x2b;</span>
+                </div>
+               
+        
+        </div>
+    </div>
+    
+</body>
+</html>

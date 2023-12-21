@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: pink;
+            box-sizing: border-box;
+            color: blue;
+        }
+        @media screen and (min-width:760px)
+        {
+            .container{
+            background-color: rgb(247, 10, 50);
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 15px;
+            color: blue;
+        }
+        }
+        @media screen and (min-width:760px) and (max-width:1024px)
+        {
+            .container{
+            background-color: rgb(34, 243, 45);
+            width: 750px;
+            padding: 10px 15px;
+            color: white;
+        }
+        }
+        @media screen and (min-width:1280px) 
+        {
+            .container{
+            background-color: rgb(11, 12, 11);
+            width: 1200px;
+            padding: 10px 20px;
+            color: white;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quisquam ipsa quas quo nam vitae in corrupti deleniti architecto odio.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quisquam ipsa quas quo nam vitae in corrupti deleniti architecto odio.</p>
+    </div>
+</body>
+</html>

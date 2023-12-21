@@ -1,0 +1,18 @@
+.first-para, .second-para {
+  color: red;
+}
+
+.second-para {
+  font-size: 20px;
+}
+
+.div1, .div2, .div3 {
+  color: red;
+  font-size: 20px;
+}
+
+.div11, .div12, .div13 {
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+}/*# sourceMappingURL=placeholder.css.map */

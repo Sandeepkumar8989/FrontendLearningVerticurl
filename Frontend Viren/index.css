@@ -1,0 +1,221 @@
+:root{
+  --primary-color:#b89e89;
+  --secondary-color:#6d0f51;
+  --accent-color:purple;
+  --test-color:#323e04;
+}
+#p2{
+    font-weight: bold;
+}
+ol li{
+    color: green;
+    font-size: 20px;
+}
+
+ul li{
+    color: bisque;
+    font-size: large;
+}
+h2{
+    color: brown;
+}
+
+#div1{
+    width: 300px;
+    padding: 20px;
+    border: 10px solid green;
+    margin: 50px;
+    background-color: orange;
+    border-style:solid;
+}
+#div2{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 10px solid green;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin: 50px;
+    background-color: orange;
+}
+
+.static{
+    position: static;
+    border: 2px solid red;
+}
+
+.relative{
+    position: relative;
+    left: 40px;
+    top: 50px;
+   
+    border: 2px solid blue;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 100px;
+    width: 200px;
+    border: 2px solid green;
+}
+
+.relative1{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 80px;
+    border: 2px solid blue;
+}
+
+.absolute{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 70px;
+    right: 30px;
+    border: 2px dashed black;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    border: solid blue 3px;
+    background-color: pink;
+
+}
+
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color:rgb(35, 42, 139);
+    z-index: 1;
+    left: 400px;
+    top: 10px;
+    right: 100px;
+  }
+ 
+  .child {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    top: 20px;
+    background-color: red;
+  }
+ 
+  .sibling {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+ 
+  .parent-1 {
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    left: 450px;
+    top: 100px;
+    background-color:green;
+  }
+ 
+  .child-1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 50px;
+    bottom: 150px;
+  }
+ 
+  .parent-2 {
+    width: 200px;
+    height: 200px;
+    background-color:rgb(45, 2, 9);
+  }
+ 
+  .child-2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(13, 86, 245);
+    position:absolute;
+    left: 150px;
+    top: 100px;
+  }
+ 
+  .parent-3{
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    width: 200px;
+    height: 200px;
+    background-color:orange;
+  }
+ 
+  .child-3{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position:absolute;
+    left: 30px;
+    top: 30px;
+  }
+ 
+  /*---- This is fixed position of css --- */
+  .parent-4 {
+    position:relative;
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    left: 300px;
+    bottom: 50px;
+  }
+ 
+  .child-4{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+  }
+
+  @font-face {
+    font-family: "Gluten";
+    src: url();
+  }
+
+
+  .p1{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Gluten;
+}
+
+#s{
+  text-shadow:2px 2px 4px #323e04;
+  color: white;
+}
+
+#s1{
+  text-shadow: 0 0 3px blue, 0 0 5px rgb(2,26,4);
+}
+
+#s2{
+  text-shadow: 0 0 3px blue, 0 0 5px rgb(2,26,4), 0 0 6px darkblue;
+  color: white;
+}
+
+
+#box1{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: red;
+  /* box-shadow: 10px 10px 10px orange; */
+
+  box-shadow: 5px 5px rgb(28,244,28),8px 8px blue,15px 15px yellow;
+}
